@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import { rhythm, scale } from '../utils/typography'
-import coeurNoir from '../images/coeurnoircopie.png'
+import Footer from '../components/footer'
 
 class Layout extends React.Component {
     render() {
@@ -67,11 +67,7 @@ class Layout extends React.Component {
                     <header>{header}</header>
                     <main>{children}</main>
                 </div>
-                <Footer>
-                    © {new Date().getFullYear()}, Built with
-                    {` `}
-                    <img src={coeurNoir} /> in Paris
-                </Footer>
+                <Footer></Footer>
             </Wrapper>
         )
     }
@@ -79,11 +75,6 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
     min-height: 100vh;
-`
-
-const Footer = styled.footer`
-    text-align: center;
-    margin: 24px;
 `
 
 export default Layout

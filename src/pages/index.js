@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Button from '../components/button'
+import About from '../pages/about'
+import NavBar from '../components/navbar'
 
 import rabbit from '../images/lapin_04.jpg'
 
@@ -18,6 +20,10 @@ class IndexPage extends React.Component {
                     keywords={[`blog`, `gatsby`, `javascript`, `react`]}
                 />
                 <img src={rabbit} alt="" />
+                <Link to="/about/">
+                    <Button marginTop="35px">About</Button>
+                </Link>
+                <NavBar></NavBar>
                 <h1>
                     Hey people{' '}
                     <span role="img" aria-label="wave emoji">

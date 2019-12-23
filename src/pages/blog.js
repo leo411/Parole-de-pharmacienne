@@ -7,6 +7,7 @@ import SEO from '../components/seo'
 
 import Button from '../components/button'
 import BlogList from '../components/blog-list'
+import NavBar from '../components/navbar'
 
 class Blog extends React.Component {
     render() {
@@ -18,6 +19,7 @@ class Blog extends React.Component {
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO title="All posts" />
                 <Bio />
+                <NavBar />
                 <BlogList posts={posts} />
                 <Link to="/">
                     <Button marginTop="85px">Go Home</Button>

@@ -30,6 +30,7 @@ class BlogPostTemplate extends React.Component {
                 >
                     {post.frontmatter.date}
                 </p>
+                <img src={post.frontmatter.featuredImage} />
                 <MDXRenderer>{post.body}</MDXRenderer>
                 <hr
                     style={{
@@ -83,8 +84,9 @@ export const pageQuery = graphql`
             body
             frontmatter {
                 title
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "DD MMMM, YYYY")
                 description
+                featuredImage
             }
         }
     }
