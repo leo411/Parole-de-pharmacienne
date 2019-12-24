@@ -1,9 +1,8 @@
 ---
-path: ghkgkg
-date: 2019-12-23
+date: 2019-12-23T00:00:00.000Z
 title: Lapin en peluche
+featuredImage: /assets/lapinenpeluche.jpg
 description: Autre info sur le lapin
-featuredImage: /uploads/lapinenpeluche.jpg
 ---
 
 Le lapin en peluche est un objet transitionnel dont de nombreux enfants se sont servis.
