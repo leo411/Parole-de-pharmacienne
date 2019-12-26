@@ -3,18 +3,18 @@ import logolapin from '../images/logolapin.jpg'
 
 const NavBar = () => (
     <nav
-        class="navbar navbar-expand-lg navbar-light bg-light"
+        className="navbar navbar-expand-lg navbar-light bg-light"
         style={{ backgroundColor: '#e3f2fd' }}
     >
         <a
-            class="navbar-brand"
+            className="navbar-brand"
             href="/"
             style={{ color: 'black', boxShadow: 'none' }}
         >
             <img src={logolapin} width="30" height="30" alt="" />
         </a>
         {/* <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNavAltMarkup"
@@ -22,12 +22,12 @@ const NavBar = () => (
             aria-expanded="false"
             aria-label="Toggle navigation"
         >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
         </button> */}
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
                 <a
-                    class="nav-item nav-link active"
+                    className="nav-item nav-link active"
                     href="/"
                     style={{
                         paddingRight: 20,
@@ -35,10 +35,10 @@ const NavBar = () => (
                         boxShadow: 'none'
                     }}
                 >
-                    Home <span class="sr-only"></span>
+                    Home <span className="sr-only"></span>
                 </a>
                 <a
-                    class="nav-item nav-link"
+                    className="nav-item nav-link"
                     href="/about/"
                     style={{
                         paddingRight: 20,
@@ -48,10 +48,10 @@ const NavBar = () => (
                 >
                     About
                 </a>
-                <div class="nav-item dropdown">
+                <div className="nav-item dropdown">
                     >
                     <a
-                        class="nav-link dropdown-toggle"
+                        className="nav-link dropdown-toggle"
                         href="/blog/"
                         id="navbarDropdownMenuLink"
                         data-toggle="dropdown"
@@ -66,11 +66,11 @@ const NavBar = () => (
                         Blog
                     </a>
                     <div
-                        class="dropdown-menu"
+                        className="dropdown-menu"
                         aria-labelledby="navbarDropdownMenuLink"
                     >
                         <a
-                            class="dropdown-item"
+                            className="dropdown-item"
                             href="#"
                             style={{
                                 paddingRight: 20,
@@ -81,7 +81,7 @@ const NavBar = () => (
                             Lapin domestique
                         </a>
                         <a
-                            class="dropdown-item"
+                            className="dropdown-item"
                             href="#"
                             style={{
                                 paddingRight: 20,
@@ -92,7 +92,7 @@ const NavBar = () => (
                             Lapin sauvage
                         </a>
                         <a
-                            class="dropdown-item"
+                            className="dropdown-item"
                             href="#"
                             style={{
                                 paddingRight: 20,
@@ -105,7 +105,7 @@ const NavBar = () => (
                     </div>
                 </div>
                 <a
-                    class="nav-item nav-link disabled"
+                    className="nav-item nav-link disabled"
                     href="#"
                     style={{
                         paddingRight: 20,
