@@ -72,12 +72,6 @@ module.exports = {
                 // edit below
                 icon: `content/assets/logolapin.png`
             }
-        },
-        {
-            resolve: `gatsby-plugin-typography`,
-            options: {
-                pathToConfigModule: `src/utils/typography`
-            }
         }
     ]
 }

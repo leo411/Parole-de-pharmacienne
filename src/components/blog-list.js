@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { rhythm } from '../utils/typography'
 
 const BlogList = props => (
     <div style={{ margin: '20px 0 40px' }}>
@@ -10,7 +9,7 @@ const BlogList = props => (
                 <div key={node.fields.slug}>
                     <h3
                         style={{
-                            marginBottom: rhythm(1 / 4)
+                            marginBottom: 0
                         }}
                     >
                         <Link
