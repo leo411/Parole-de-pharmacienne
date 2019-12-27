@@ -9,6 +9,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import styled from 'styled-components'
+import decomaison from '../images/decomaison.jpg'
 
 function Bio() {
     return (
@@ -18,7 +19,7 @@ function Bio() {
                 const { author, social } = data.site.siteMetadata
                 return (
                     <Container>
-                        <Image
+                        {/* <Image
                             fixed={data.avatar.childImageSharp.fixed}
                             alt={author}
                             style={{
@@ -30,15 +31,33 @@ function Bio() {
                             imgStyle={{
                                 borderRadius: `50%`
                             }}
-                        />
-                        <p>
-                            Docteur en pharmacie. Maman de 3 grands enfants.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat.
-                        </p>
+                        /> */}
+                        <div>
+                            <div
+                                style={{
+                                    marginRight: 0,
+                                    marginBottom: 0,
+                                    minWidth: 50,
+                                    borderRadius: `100%`
+                                }}
+                            >
+                                <img
+                                    src={decomaison}
+                                    imgStyle={{
+                                        borderRadius: `50%`
+                                    }}
+                                />
+                            </div>
+                            <p>
+                                Docteur en pharmacie. Maman de 3 grands enfants.
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                            </p>
+                        </div>
                     </Container>
                 )
             }}
