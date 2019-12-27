@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Bio from '../components/bio'
 
 import NavBar from '../components/navbar'
 
@@ -115,6 +116,7 @@ class IndexPage extends React.Component {
                 <div class="row mb-2">
                     <h3 style={{ paddingLeft: '3rem' }}>About</h3>
                     <hr />
+                    <Bio />
                     <div class="col-md-6">
                         <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
                             <div class="col p-4 d-flex flex-column position-static">

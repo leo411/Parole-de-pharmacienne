@@ -32,12 +32,12 @@ function Bio() {
                             }}
                         />
                         <p>
-                            Written by <strong>{author}</strong> who lives and
-                            works in Paris building useful things.
-                            {` `}
-                            {/* <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow her on Twitter
-              </a> */}
+                            Docteur en pharmacie. Maman de 3 grands enfants.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
                         </p>
                     </Container>
                 )
