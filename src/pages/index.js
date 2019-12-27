@@ -20,9 +20,6 @@ class IndexPage extends React.Component {
                     keywords={[`blog`, `gatsby`, `javascript`, `react`]}
                 />
                 <img src={rabbit} alt="" />
-                <Link to="/about/">
-                    <Button marginTop="35px">About</Button>
-                </Link>
                 <NavBar></NavBar>
                 <h1>
                     Hey people{' '}
