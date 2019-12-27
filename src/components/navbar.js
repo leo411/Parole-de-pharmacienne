@@ -19,7 +19,7 @@ const NavBar = () => (
         >
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="/#/">
                         Home
                     </a>
                 </li>
@@ -36,7 +36,10 @@ const NavBar = () => (
                         className="dropdown-menu"
                         aria-labelledby="dropdown_target"
                     >
-                        <a className="dropdown-item navlist-item" href="#">
+                        <a
+                            className="dropdown-item navlist-item"
+                            href="../blog/"
+                        >
                             Tous les posts
                         </a>
                         <a className="dropdown-item navlist-item" href="#">
