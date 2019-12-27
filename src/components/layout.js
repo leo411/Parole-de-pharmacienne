@@ -55,12 +55,14 @@ class Layout extends React.Component {
         return (
             <Wrapper>
                 <div
-                    style={{
-                        marginLeft: `auto`,
-                        marginRight: `auto`,
-                        maxWidth: '500px',
-                        padding: `1px`
-                    }}
+                    style={
+                        {
+                            // marginLeft: `auto`,
+                            // marginRight: `auto`,
+                            // maxWidth: '500px',
+                            // padding: `1px`
+                        }
+                    }
                 >
                     <header>{header}</header>
                     <main>{children}</main>
