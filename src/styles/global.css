@@ -1,3 +1,20 @@
 img {
     margin-bottom: 0rem;
 }
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    padding-left: 45%;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+}

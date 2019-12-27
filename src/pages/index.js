@@ -1,13 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Button from '../components/button'
-import About from '../pages/about'
+
 import NavBar from '../components/navbar'
 
-import rabbit from '../images/lapin_04.jpg'
 import banner from '../images/banner.jpeg'
 
 class IndexPage extends React.Component {
@@ -21,7 +18,10 @@ class IndexPage extends React.Component {
                     title="Home"
                     keywords={[`blog`, `gatsby`, `javascript`, `react`]}
                 />
-                <img src={banner} className="img-fluid" alt="" />
+                <div class="container">
+                    <img src={banner} className="img-fluid" alt="" />
+                    <div class="centered">{siteTitle}</div>
+                </div>
 
                 <h1>
                     Hey people{' '}
