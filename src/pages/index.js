@@ -15,12 +15,13 @@ class IndexPage extends React.Component {
 
         return (
             <Layout location={this.props.location} title={siteTitle}>
+                <NavBar></NavBar>
                 <SEO
                     title="Home"
                     keywords={[`blog`, `gatsby`, `javascript`, `react`]}
                 />
                 <img src={rabbit} alt="" />
-                <NavBar></NavBar>
+
                 <h1>
                     Hey people{' '}
                     <span role="img" aria-label="wave emoji">
