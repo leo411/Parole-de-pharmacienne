@@ -8,6 +8,7 @@ import About from '../pages/about'
 import NavBar from '../components/navbar'
 
 import rabbit from '../images/lapin_04.jpg'
+import banner from '../images/banner.jpeg'
 
 class IndexPage extends React.Component {
     render() {
@@ -20,7 +21,7 @@ class IndexPage extends React.Component {
                     title="Home"
                     keywords={[`blog`, `gatsby`, `javascript`, `react`]}
                 />
-                <img src={rabbit} alt="" />
+                <img src={banner} className="img-fluid" alt="" />
 
                 <h1>
                     Hey people{' '}
@@ -37,9 +38,6 @@ class IndexPage extends React.Component {
                     visiter mon blog.
                 </p>
                 <p>Bonne lecture!</p>
-                <Link to="/blog/">
-                    <Button marginTop="35px">Go to Blog</Button>
-                </Link>
             </Layout>
         )
     }
