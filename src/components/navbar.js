@@ -3,119 +3,87 @@ import logolapin from '../images/logolapin.jpg'
 
 const NavBar = () => (
     <nav
-        className="navbar navbar-expand-lg navbar-light bg-light"
-        style={{ backgroundColor: '#e3f2fd' }}
+        className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+        style={{ backgroundColor: `#fff` }}
     >
-        <a
-            className="navbar-brand"
-            href="/"
-            style={{ color: 'black', boxShadow: 'none' }}
-        >
-            <img src={logolapin} width="30" height="30" alt="" />
-        </a>
-        {/* <button
+        <button
             className="navbar-toggler"
-            type="button"
             data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-target="#collapse_target"
         >
             <span className="navbar-toggler-icon"></span>
-        </button> */}
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-                <a
-                    className="nav-item nav-link active"
-                    href="/"
-                    style={{
-                        paddingRight: 20,
-                        color: 'black',
-                        boxShadow: 'none'
-                    }}
-                >
-                    Home <span className="sr-only"></span>
-                </a>
-                <a
-                    className="nav-item nav-link"
-                    href="/about/"
-                    style={{
-                        paddingRight: 20,
-                        color: 'black',
-                        boxShadow: 'none'
-                    }}
-                >
-                    About
-                </a>
-                <div className="nav-item dropdown">
-                    >
+        </button>
+        <div
+            className="collapse navbar-collapse navBarText"
+            id="collapse_target"
+        >
+            <ul className="navbar-nav">
+                <li className="nav-item">
+                    <a className="nav-link" href="#">
+                        Home
+                    </a>
+                </li>
+                <li className="nav-item dropdown">
                     <a
                         className="nav-link dropdown-toggle"
-                        href="/blog/"
-                        id="navbarDropdownMenuLink"
                         data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        style={{
-                            paddingRight: 20,
-                            color: 'black',
-                            boxShadow: 'none'
-                        }}
+                        data-target="dropdown_target"
+                        href="#"
                     >
                         Blog
                     </a>
                     <div
                         className="dropdown-menu"
-                        aria-labelledby="navbarDropdownMenuLink"
+                        aria-labelledby="dropdown_target"
                     >
-                        <a
-                            className="dropdown-item"
-                            href="#"
-                            style={{
-                                paddingRight: 20,
-                                color: 'black',
-                                boxShadow: 'none'
-                            }}
-                        >
-                            Lapin domestique
+                        <a className="dropdown-item navlist-item" href="#">
+                            Tous les posts
                         </a>
-                        <a
-                            className="dropdown-item"
-                            href="#"
-                            style={{
-                                paddingRight: 20,
-                                color: 'black',
-                                boxShadow: 'none'
-                            }}
-                        >
-                            Lapin sauvage
+                        <a className="dropdown-item navlist-item" href="#">
+                            Conseils
                         </a>
-                        <a
-                            className="dropdown-item"
-                            href="#"
-                            style={{
-                                paddingRight: 20,
-                                color: 'black',
-                                boxShadow: 'none'
-                            }}
-                        >
-                            Autre
+                        <a className="dropdown-item navlist-item" href="#">
+                            News
                         </a>
                     </div>
-                </div>
-                <a
-                    className="nav-item nav-link disabled"
-                    href="#"
-                    style={{
-                        paddingRight: 20,
-                        color: 'black',
-                        boxShadow: 'none'
-                    }}
-                >
-                    Store
-                </a>
-            </div>
+                </li>
+                <li className="nav-item dropdown">
+                    <a
+                        className="nav-link dropdown-toggle"
+                        data-toggle="dropdown"
+                        data-target="dropdown_target"
+                        href="#"
+                    >
+                        Les Boxs
+                    </a>
+                    <div
+                        className="dropdown-menu"
+                        aria-labelledby="dropdown_target"
+                    >
+                        <a className="dropdown-item navlist-item" href="#">
+                            Thématiques
+                        </a>
+                        <div className="background-color"></div>
+                        <a className="dropdown-item navlist-item" href="#">
+                            Sur abonnement
+                        </a>
+                        <a className="dropdown-item navlist-item" href="#">
+                            Boutique
+                        </a>
+                    </div>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">
+                        Atelier nutrition
+                    </a>
+                </li>
+
+                <li className="nav-item">
+                    <a className="nav-link" href={`/src/pages/about.js`}>
+                        Contact
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
 )
