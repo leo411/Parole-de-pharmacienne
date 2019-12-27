@@ -22,22 +22,49 @@ class IndexPage extends React.Component {
                     <img src={banner} className="img-fluid" alt="" />
                     <div class="centered">{siteTitle}</div>
                 </div>
-
-                <h1>
-                    Hey people{' '}
-                    <span role="img" aria-label="wave emoji">
-                        👋
-                    </span>
-                </h1>
-                <p>
-                    Bienvenue sur le blog de Léopoldine. Nous allons parler de
-                    lapins. Vous êtes actuellement sur la page d'accueil.
-                </p>
-                <p>
-                    Pour en découvrir plus sur les lapins je vous invite à
-                    visiter mon blog.
-                </p>
-                <p>Bonne lecture!</p>
+                <div class="row mb-2">
+                    <div class="col-md-4">
+                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary">
+                                    Conseil Santé
+                                </strong>
+                                <h3 class="mb=0">Title</h3>
+                                <div class="mb-1 text-muted">Date</div>
+                                <p class="card-text mb-auto">Description</p>
+                                <a href="#" class="stretched-link">
+                                    Continuer à lire
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary">
+                                    Conseil Nutrition
+                                </strong>
+                                <h3 class="mb=0">Title</h3>
+                                <div class="mb-1 text-muted">Date</div>
+                                <p class="card-text mb-auto">Description</p>
+                                <a href="#" class="stretched-link">
+                                    Continuer à lire
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary">
+                                    Conseil Beauté
+                                </strong>
+                                <h3 class="mb=0">Title</h3>
+                                <div class="mb-1 text-muted">Date</div>
+                                <p class="card-text mb-auto">Description</p>
+                                <a href="#" class="stretched-link">
+                                    Continuer à lire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </Layout>
         )
     }
