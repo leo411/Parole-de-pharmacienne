@@ -1,5 +1,4 @@
 import React from 'react'
-import logolapin from '../images/logolapin.jpg'
 
 const NavBar = () => (
     <nav

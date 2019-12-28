@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import Button from '../components/button'
 import BlogList from '../components/blog-list'
 import NavBar from '../components/navbar'
+import banner from '../images/banner.jpeg'
+import PostCategoriesNav from '../components/postcategoriesnav'
 
 class Blog extends React.Component {
     render() {
@@ -19,6 +20,11 @@ class Blog extends React.Component {
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO title="All posts" />
                 <NavBar />
+                <div class="container">
+                    <img src={banner} className="img-fluid" alt="" />
+                    <div class="centered">{siteTitle}</div>
+                </div>
+                <PostCategoriesNav />
                 <BlogList posts={posts} />
                 <Link to="/">
                     <Button marginTop="85px">Go Home</Button>
