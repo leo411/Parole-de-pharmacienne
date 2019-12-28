@@ -9,8 +9,6 @@ import banner from '../images/banner.jpeg'
 
 class IndexPage extends React.Component {
     render() {
-        const siteTitle = 'Le blog de Léopoldine'
-
         return (
             <Layout location={this.props.location}>
                 <SEO

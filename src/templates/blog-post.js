@@ -9,7 +9,6 @@ import SEO from '../components/seo'
 class BlogPostTemplate extends React.Component {
     render() {
         const post = this.props.data.mdx
-        const siteTitle = this.props.data.site.siteMetadata.title
         const { previous, next } = this.props.pageContext
 
         return (
@@ -28,7 +27,7 @@ class BlogPostTemplate extends React.Component {
                 >
                     {post.frontmatter.date}
                 </p>
-                <img src={post.frontmatter.featuredImage} />
+                <img src={post.frontmatter.featuredImage} alt="" />
                 <MDXRenderer>{post.body}</MDXRenderer>
                 <hr />
                 <Bio />

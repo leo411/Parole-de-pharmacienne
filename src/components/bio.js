@@ -9,6 +9,7 @@ const Bio = () => (
                 borderRadius: `50%`,
                 height: '150px'
             }}
+            alt=""
         />
         <em class="px-2 py-2" style={{ textAlign: 'left' }}>
             Docteur en pharmacie. Maman de 3 grands enfants. Lorem ipsum dolor
