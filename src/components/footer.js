@@ -1,6 +1,4 @@
 import React from 'react'
-import coeurNoir from '../images/coeurnoircopie.png'
-import styled from 'styled-components'
 
 const Footer = () => (
     <div>
