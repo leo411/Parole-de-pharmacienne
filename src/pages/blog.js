@@ -6,7 +6,7 @@ import SEO from '../components/seo'
 
 import Button from '../components/button'
 import BlogList from '../components/blog-list'
-import NavBar from '../components/navbar'
+import Banner from '../components/banner'
 import banner from '../images/banner.jpeg'
 import PostCategoriesNav from '../components/postcategoriesnav'
 
@@ -19,15 +19,9 @@ class Blog extends React.Component {
         return (
             <Layout location={this.props.location}>
                 <SEO title="All posts" />
-                <div class="container">
-                    <img src={banner} className="img-fluid" alt="" />
-                    <div class="centered">{siteTitle}</div>
-                </div>
+                <Banner title="All posts" image={banner} />
                 <PostCategoriesNav />
                 <BlogList posts={posts} />
-                <Link to="/">
-                    <Button marginTop="85px">Go Home</Button>
-                </Link>
             </Layout>
         )
     }

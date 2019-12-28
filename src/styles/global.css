@@ -30,3 +30,8 @@ h5,
 h6 {
     font-family: 'Merriweather';
 }
+
+h4 {
+    font-family: 'Merriweather';
+    font-style: italic;
+}
