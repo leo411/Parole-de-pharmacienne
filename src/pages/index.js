@@ -24,7 +24,7 @@ class IndexPage extends React.Component {
                     </h3>
                     <hr />
                     <div class="row mb-2">
-                        <div class="col p-4 d-flex flex-column border rounded shadow px-1">
+                        <div class="col p-4 d-flex flex-column border rounded shadow mx-2">
                             <strong class="d-inline-block mb-2 text-primary">
                                 Santé
                             </strong>
@@ -46,7 +46,7 @@ class IndexPage extends React.Component {
                                 Continuer à lire
                             </a>
                         </div>
-                        <div class="col p-4 d-flex flex-column border rounded shadow">
+                        <div class="col p-4 d-flex flex-column border rounded shadow mx-2">
                             <strong class="d-inline-block mb-2 text-primary">
                                 Beauté
                             </strong>
@@ -65,7 +65,7 @@ class IndexPage extends React.Component {
                             News
                         </h3>
                         <hr />
-                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
+                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 ml-2">
                             <div class="col p-4 d-flex flex-column position-static">
                                 <strong class="d-inline-block mb-2 text-primary">
                                     Santé
@@ -78,7 +78,7 @@ class IndexPage extends React.Component {
                                 </a>
                             </div>
                         </div>
-                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
+                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 ml-2">
                             <div class="col p-4 d-flex flex-column position-static">
                                 <strong class="d-inline-block mb-2 text-primary">
                                     Nutrition
@@ -91,7 +91,7 @@ class IndexPage extends React.Component {
                                 </a>
                             </div>
                         </div>
-                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
+                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 ml-2">
                             <div class="col p-4 d-flex flex-column position-static">
                                 <strong class="d-inline-block mb-2 text-primary">
                                     Beauté
