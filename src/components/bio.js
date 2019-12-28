@@ -43,7 +43,8 @@ function Bio() {
                                 <img
                                     src={decomaison}
                                     imgStyle={{
-                                        borderRadius: `50%`
+                                        borderRadius: `500px`,
+                                        height: '150px'
                                     }}
                                 />
                             </div>
