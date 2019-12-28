@@ -13,8 +13,7 @@ class IndexPage extends React.Component {
         const siteTitle = 'Le blog de Léopoldine'
 
         return (
-            <Layout location={this.props.location} title={siteTitle}>
-                <NavBar></NavBar>
+            <Layout location={this.props.location}>
                 <SEO
                     title="Home"
                     keywords={[`blog`, `gatsby`, `javascript`, `react`]}

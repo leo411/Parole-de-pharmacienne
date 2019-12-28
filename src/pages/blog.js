@@ -17,9 +17,8 @@ class Blog extends React.Component {
         const posts = data.allMdx.edges
 
         return (
-            <Layout location={this.props.location} title={siteTitle}>
+            <Layout location={this.props.location}>
                 <SEO title="All posts" />
-                <NavBar />
                 <div class="container">
                     <img src={banner} className="img-fluid" alt="" />
                     <div class="centered">{siteTitle}</div>
