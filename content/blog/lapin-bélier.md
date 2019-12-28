@@ -2,6 +2,7 @@
 date: 2019-12-22T12:32:38.588Z
 title: Lapin Bélier
 categories: conseils
+subCategories: santé
 featuredImage: /assets/lapinbelier.jpg
 description: Information sur la race
 ---
