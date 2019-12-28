@@ -1,16 +1,4 @@
 @font-face {
-    font-family: 'Dosis';
-    src: url('../assets/fonts/fonts/Dosis/Dosis-VariableFont:wght.ttf');
-}
-@font-face {
-    font-family: 'Gupter';
-    src: url('../assets/fonts/fonts/Gupter/Gupter-Regular.ttf');
-}
-@font-face {
-    font-family: 'Inria-Serif';
-    src: url('../assets/fonts/fonts/Inria_Serif/InriaSerif-Regular.ttf');
-}
-@font-face {
     font-family: 'Merriweather';
     src: url('../assets/fonts/fonts/Merriweather/Merriweather-Regular.ttf');
 }

@@ -17,7 +17,12 @@ collections:
             name: 'categories'
             widget: 'select'
             required: true
-            options: ['conseils', 'news']
+            options: [conseils, news]
+          - label: 'SubCategories'
+            name: 'subCategories'
+            widget: 'select'
+            required: false
+            options: [santé, beauté, nutrition]
           - { name: featuredImage, label: featuredImage, widget: image }
           - { name: description, label: Description }
           - { name: body, label: Body, widget: markdown }

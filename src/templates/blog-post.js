@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
-import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -17,20 +16,21 @@ class BlogPostTemplate extends React.Component {
                     title={post.frontmatter.title}
                     description={post.frontmatter.description || post.excerpt}
                 />
-                <h1>{post.frontmatter.title}</h1>
-                <p
-                    style={{
-                        display: `block`,
-                        marginBottom: 0,
-                        marginTop: 0
-                    }}
-                >
-                    {post.frontmatter.date}
-                </p>
-                <img src={post.frontmatter.featuredImage} alt="" />
-                <MDXRenderer>{post.body}</MDXRenderer>
-                <hr />
-                <Bio />
+                <div>
+                    <h1>{post.frontmatter.title}</h1>
+                    <p
+                        style={{
+                            display: `block`,
+                            marginBottom: 0,
+                            marginTop: 0
+                        }}
+                    >
+                        {post.frontmatter.date}
+                    </p>
+                    <img src={post.frontmatter.featuredImage} alt="" />
+                    <MDXRenderer>{post.body}</MDXRenderer>
+                    <hr />
+                </div>
 
                 <ul
                     style={{
