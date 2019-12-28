@@ -6,12 +6,11 @@ const BlogList = props => (
         {props.posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-                <div key={node.fields.slug}>
-                    <h3
-                        style={{
-                            marginBottom: 0
-                        }}
-                    >
+                <div class="col p-4 d-flex flex-column border rounded shadow mx-2">
+                    <strong class="d-inline-block mb-2 text-primary">
+                        {node.frontmatter.category}
+                    </strong>
+                    <h3 class="mb=0">
                         <Link
                             style={{ boxShadow: `none` }}
                             to={`blog${node.fields.slug}`}
@@ -19,12 +18,21 @@ const BlogList = props => (
                             {title}
                         </Link>
                     </h3>
-                    <small>{node.frontmatter.date}</small>
+                    <div class="mb-1 text-muted">
+                        <small>{node.frontmatter.date}</small>
+                    </div>
                     <p
+                        class="card-text mb-auto"
                         dangerouslySetInnerHTML={{
                             __html: node.frontmatter.description || node.excerpt
                         }}
-                    />
+                    ></p>
+                    <Link
+                        style={{ boxShadow: `none` }}
+                        to={`blog${node.fields.slug}`}
+                    >
+                        Continuer à lire
+                    </Link>
                 </div>
             )
         })}
