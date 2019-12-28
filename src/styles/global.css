@@ -18,18 +18,15 @@
     font-family: 'Poppins';
     src: url('../assets/fonts/fonts/Poppins/Poppins-Regular.ttf');
 }
-p {
+body {
     font-family: 'Poppins';
 }
-h2 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Merriweather';
-}
-a {
-    font-family: 'Merriweather';
-}
-h3 {
-    font-family: 'Merriweather';
-}
-img {
-    margin-bottom: 0rem;
 }
