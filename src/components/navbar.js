@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBar = () => (
     <nav
-        className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+        className="navbar navbar-expand-sm navbar-light bg-light sticky-top"
         style={{ backgroundColor: `#fff` }}
     >
         <button

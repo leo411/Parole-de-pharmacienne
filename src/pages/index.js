@@ -19,56 +19,52 @@ class IndexPage extends React.Component {
                 />
                 <Banner title="Parole de pharmacienne" image={banner} />
                 <div class="container-fluid">
-                    <h3 style={{ paddingLeft: '3rem' }}>Conseils</h3>
+                    <h3 class="my-2" style={{ paddingLeft: '3rem' }}>
+                        Conseils
+                    </h3>
                     <hr />
                     <div class="row mb-2">
-                        <div class="col-md-6">
-                            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
-                                <div class="col p-4 d-flex flex-column position-static">
-                                    <strong class="d-inline-block mb-2 text-primary">
-                                        Santé
-                                    </strong>
-                                    <h3 class="mb=0">Title</h3>
-                                    <div class="mb-1 text-muted">Date</div>
-                                    <p class="card-text mb-auto">Description</p>
-                                    <a href="#" class="stretched-link">
-                                        Continuer à lire
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
-                                <div class="col p-4 d-flex flex-column position-static">
-                                    <strong class="d-inline-block mb-2 text-primary">
-                                        Nutrition
-                                    </strong>
-                                    <h3 class="mb=0">Title</h3>
-                                    <div class="mb-1 text-muted">Date</div>
-                                    <p class="card-text mb-auto">Description</p>
-                                    <a href="#" class="stretched-link">
-                                        Continuer à lire
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
-                                <div class="col p-4 d-flex flex-column position-static">
-                                    <strong class="d-inline-block mb-2 text-primary">
-                                        Beauté
-                                    </strong>
-                                    <h3 class="mb=0">Title</h3>
-                                    <div class="mb-1 text-muted">Date</div>
-                                    <p class="card-text mb-auto">Description</p>
-                                    <a href="#" class="stretched-link">
-                                        Continuer à lire
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="col p-4 d-flex flex-column border rounded shadow px-1">
+                            <strong class="d-inline-block mb-2 text-primary">
+                                Santé
+                            </strong>
+                            <h3 class="mb=0">Title</h3>
+                            <div class="mb-1 text-muted">Date</div>
+                            <p class="card-text mb-auto">Description</p>
+                            <a href="#" class="stretched-link">
+                                Continuer à lire
+                            </a>
+                        </div>
+                        <div class="col p-4 d-flex flex-column border rounded shadow">
+                            <strong class="d-inline-block mb-2 text-primary">
+                                Nutrition
+                            </strong>
+                            <h3 class="mb=0">Title</h3>
+                            <div class="mb-1 text-muted">Date</div>
+                            <p class="card-text mb-auto">Description</p>
+                            <a href="#" class="stretched-link">
+                                Continuer à lire
+                            </a>
+                        </div>
+                        <div class="col p-4 d-flex flex-column border rounded shadow">
+                            <strong class="d-inline-block mb-2 text-primary">
+                                Beauté
+                            </strong>
+                            <h3 class="mb=0">Title</h3>
+                            <div class="mb-1 text-muted">Date</div>
+                            <p class="card-text mb-auto">Description</p>
+                            <a href="#" class="stretched-link">
+                                Continuer à lire
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-2">
-                    <h3 style={{ paddingLeft: '3rem' }}>News</h3>
-                    <hr />
                     <div class="col-md-6">
+                        <h3 class="my-2" style={{ paddingLeft: '3rem' }}>
+                            News
+                        </h3>
+                        <hr />
                         <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
                             <div class="col p-4 d-flex flex-column position-static">
                                 <strong class="d-inline-block mb-2 text-primary">
@@ -109,26 +105,12 @@ class IndexPage extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row mb-2">
-                    <h3 style={{ paddingLeft: '3rem' }}>About</h3>
-                    <hr />
-                    <Bio />
                     <div class="col-md-6">
-                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <h4 class="font-italic">About</h4>
-                                <p class="mb-0">
-                                    Docteur en pharmacie. Maman de 3 grands
-                                    enfants. Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna
-                                    aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat.
-                                </p>
-                            </div>
-                        </div>
+                        <h3 class="my-2" style={{ paddingLeft: '3rem' }}>
+                            About
+                        </h3>
+                        <hr />
+                        <Bio />
                     </div>
                 </div>
             </Layout>
