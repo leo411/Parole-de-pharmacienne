@@ -1,7 +1,9 @@
 ---
-path: ndl
 date: 2019-12-23T11:09:27.468Z
 title: Nourriture du lapin
+categories: news
+subCategories: nutrition
+featuredImage: /assets/logopharmacie.png
 description: autres
 ---
 Les légumes que l'on peut donner au lapin 
