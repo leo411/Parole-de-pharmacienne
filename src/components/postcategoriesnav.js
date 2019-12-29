@@ -4,8 +4,8 @@ import './postcategoriesnav.css'
 
 const PostCategoriesNav = () => (
     <nav
-        className="navbar navbar-expand-lg sticky-top"
-        style={{ backgroundColor: `#fff` }}
+        className="navbar navbar-expand-lg"
+        style={{ backgroundColor: `#e9ecef` }}
     >
         <button
             className="navbar-toggler"
