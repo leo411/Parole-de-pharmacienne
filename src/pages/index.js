@@ -25,7 +25,11 @@ class IndexPage extends React.Component {
                     </h3>
                     <hr />
                     <div class="row mb-2">
-                        <BlogList category="conseils" posts={posts} />
+                        <BlogList
+                            category="conseils"
+                            posts={posts}
+                            columnWidth={4}
+                        />
                     </div>
                 </div>
                 <div class="row mb-2">
@@ -34,44 +38,12 @@ class IndexPage extends React.Component {
                             News
                         </h3>
                         <hr />
-                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 ml-2">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <strong class="d-inline-block mb-2 text-primary">
-                                    Santé
-                                </strong>
-                                <h3 class="mb=0">Title</h3>
-                                <div class="mb-1 text-muted">Date</div>
-                                <p class="card-text mb-auto">Description</p>
-                                <a href="#" class="stretched-link">
-                                    Continuer à lire
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 ml-2">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <strong class="d-inline-block mb-2 text-primary">
-                                    Nutrition
-                                </strong>
-                                <h3 class="mb=0">Title</h3>
-                                <div class="mb-1 text-muted">Date</div>
-                                <p class="card-text mb-auto">Description</p>
-                                <a href="#" class="stretched-link">
-                                    Continuer à lire
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 ml-2">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <strong class="d-inline-block mb-2 text-primary">
-                                    Beauté
-                                </strong>
-                                <h3 class="mb=0">Title</h3>
-                                <div class="mb-1 text-muted">Date</div>
-                                <p class="card-text mb-auto">Description</p>
-                                <a href="#" class="stretched-link">
-                                    Continuer à lire
-                                </a>
-                            </div>
+                        <div class="row mb-2 px-3">
+                            <BlogList
+                                category="news"
+                                posts={posts}
+                                columnWidth={12}
+                            />
                         </div>
                     </div>
                     <div class="col-md-6">
