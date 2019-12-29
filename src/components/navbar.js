@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Logo from '../components/logo'
 import './navbar.css'
 
 const NavBar = () => (
@@ -14,6 +14,7 @@ const NavBar = () => (
         >
             <span className="navbar-toggler-icon"></span>
         </button>
+        <Logo />
         <div
             className="collapse navbar-collapse navBarText"
             id="collapse_target"
