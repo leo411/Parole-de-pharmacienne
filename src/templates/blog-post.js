@@ -16,46 +16,70 @@ class BlogPostTemplate extends React.Component {
                     title={post.frontmatter.title}
                     description={post.frontmatter.description || post.excerpt}
                 />
-                <div class="d-flex flex-column align-items-center">
-                    <h1>{post.frontmatter.title}</h1>
-                    <p
+                <div style={{ backgroundColor: 'whitesmoke' }} class="py-5">
+                    <div
                         style={{
-                            display: `block`,
-                            marginBottom: 0,
-                            marginTop: 0
+                            backgroundColor: '#fff',
+                            maxWidth: '888px',
+                            width: '90%',
+                            margin: '0 auto'
                         }}
                     >
-                        {post.frontmatter.date}
-                    </p>
-                    <img src={post.frontmatter.featuredImage} alt="" />
-                    <MDXRenderer>{post.body}</MDXRenderer>
-                    <hr />
+                        <div class="d-flex flex-column align-items-center p-3">
+                            <h1 class="pt-1">{post.frontmatter.title}</h1>
+                            <p
+                                style={{
+                                    display: `block`,
+                                    marginBottom: 0,
+                                    marginTop: 0,
+                                    textAlign: 'center'
+                                }}
+                                class="px-1"
+                            >
+                                {post.frontmatter.date}
+                            </p>
+                            <img
+                                src={post.frontmatter.featuredImage}
+                                alt=""
+                                class="img-fluid"
+                            />
+                            <div style={{ textAlign: 'justify' }}>
+                                <MDXRenderer>{post.body}</MDXRenderer>
+                            </div>
+                            <hr />
+                        </div>
+                        <ul
+                            style={{
+                                display: `flex`,
+                                flexWrap: `wrap`,
+                                justifyContent: `space-between`,
+                                listStyle: `none`
+                            }}
+                            class="p-3"
+                        >
+                            <li>
+                                {previous && (
+                                    <Link
+                                        to={`blog${previous.fields.slug}`}
+                                        rel="prev"
+                                    >
+                                        ← {previous.frontmatter.title}
+                                    </Link>
+                                )}
+                            </li>
+                            <li>
+                                {next && (
+                                    <Link
+                                        to={`blog${next.fields.slug}`}
+                                        rel="next"
+                                    >
+                                        {next.frontmatter.title} →
+                                    </Link>
+                                )}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-                <ul
-                    style={{
-                        display: `flex`,
-                        flexWrap: `wrap`,
-                        justifyContent: `space-between`,
-                        listStyle: `none`,
-                        padding: 0
-                    }}
-                >
-                    <li>
-                        {previous && (
-                            <Link to={`blog${previous.fields.slug}`} rel="prev">
-                                ← {previous.frontmatter.title}
-                            </Link>
-                        )}
-                    </li>
-                    <li>
-                        {next && (
-                            <Link to={`blog${next.fields.slug}`} rel="next">
-                                {next.frontmatter.title} →
-                            </Link>
-                        )}
-                    </li>
-                </ul>
             </Layout>
         )
     }
