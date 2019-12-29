@@ -1,6 +1,6 @@
 ---
 date: 2019-12-29T15:23:50.245Z
-title: Un gouter équilibré
+title: Un goûter équilibré
 categories: conseils
 subCategories: nutrition
 featuredImage: /assets/decomaison1.jpg
