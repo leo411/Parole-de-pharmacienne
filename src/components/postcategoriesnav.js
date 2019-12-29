@@ -1,8 +1,10 @@
 import React from 'react'
 
+import './postcategoriesnav.css'
+
 const PostCategoriesNav = () => (
     <nav
-        className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+        className="navbar navbar-expand-lg sticky-top"
         style={{ backgroundColor: `#fff` }}
     >
         <button

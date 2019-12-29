@@ -1,8 +1,10 @@
 import React from 'react'
 
+import './navbar.css'
+
 const NavBar = () => (
     <nav
-        className="navbar navbar-expand-sm navbar-light bg-light sticky-top"
+        className="navbar navbar-expand-sm sticky-top"
         style={{ backgroundColor: `#fff` }}
     >
         <button
