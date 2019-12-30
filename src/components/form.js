@@ -29,7 +29,7 @@ const Form = props => (
         <textarea style={{ width: '100%' }} type="text" rows="8">
             Message
         </textarea>
-        <button>Envoyer</button>
+        <button className="button">Envoyer</button>
     </form>
 )
 
