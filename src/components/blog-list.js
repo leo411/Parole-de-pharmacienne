@@ -18,7 +18,6 @@ const BlogList = props =>
             return (
                 <div
                     class={`col-${props.columnWidth} p-4 d-flex flex-column shadow m-4`}
-                    style={{ maxWidth: '55rem' }}
                 >
                     {/* <img>
                 {node.frontmatter.featuredImage}
