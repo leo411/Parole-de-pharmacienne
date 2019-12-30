@@ -1,0 +1,12 @@
+.label {
+    border-width: 1px;
+    border-color: #bababa;
+    border-style: solid;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.input,
+select {
+    width: 100%;
+}

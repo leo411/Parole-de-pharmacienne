@@ -1,26 +1,34 @@
 import React from 'react'
+import './form.css'
 
 const Form = props => (
     <form>
-        <label>
-            <input type="text" placeholder="Prénom"></input>
+        <label className="label" style={{ width: '50%' }}>
+            <input className="input" type="text" placeholder="Prénom"></input>
         </label>
-        <label>
-            <input type="text" placeholder="Nom"></input>
+        <label className="label" style={{ width: '50%' }}>
+            <input className="input" type="text" placeholder="Nom"></input>
         </label>
-        <label>
-            <input type="text" placeholder="Adresse Email"></input>
+        <label className="label">
+            <input
+                className="input"
+                type="email"
+                placeholder="Adresse Email"
+            ></input>
         </label>
-        <label>
-            Type de demande
-            {/* <input type="text" placeholder="Type de demande"></input> */}
-            <select>
+        <label className="label">
+            <select className="input" defaultValue="Type de demande">
+                <option disabled hidden>
+                    Type de demande
+                </option>
                 <option>Blog</option>
                 <option>Les boxs</option>
                 <option>Atelier Nutrition</option>
             </select>
         </label>
-        <textarea type="text">Message</textarea>
+        <textarea style={{ width: '100%' }} type="text" rows="8">
+            Message
+        </textarea>
         <button>Envoyer</button>
     </form>
 )
