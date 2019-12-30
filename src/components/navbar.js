@@ -46,13 +46,13 @@ const NavBar = () => (
                         </a>
                         <a
                             className="dropdown-item navlist-item"
-                            href="../blog-conseils.js"
+                            href="/blog-conseils/"
                         >
                             Conseils
                         </a>
                         <a
                             className="dropdown-item navlist-item"
-                            href="../pages/blog-news.js"
+                            href="/blog-news/"
                         >
                             News
                         </a>

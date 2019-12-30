@@ -20,22 +20,22 @@ const PostCategoriesNav = () => (
         >
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <a className="nav-link" href="/#/">
+                    <a className="nav-link" href="/blog/">
                         All
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/#/">
+                    <a className="nav-link" href="/blog-beauté/">
                         Beauté
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/#/">
+                    <a className="nav-link" href="/blog-santé/">
                         Santé
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/#/">
+                    <a className="nav-link" href="/blog-nutrition/">
                         Nutrition
                     </a>
                 </li>
