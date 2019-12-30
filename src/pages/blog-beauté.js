@@ -23,8 +23,7 @@ class BlogBeauté extends React.Component {
                     <BlogList
                         posts={posts}
                         columnWidth={3}
-                        categories={'conseils'}
-                        subCategories={'beauté'}
+                        subCategory={'beauté'}
                     />
                 </div>
             </Layout>
@@ -54,6 +53,7 @@ export const pageQuery = graphql`
                         description
                         categories
                         subCategories
+                        featuredImage
                     }
                 }
             }

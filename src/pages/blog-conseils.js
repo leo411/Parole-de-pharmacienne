@@ -23,7 +23,7 @@ class BlogConseils extends React.Component {
                     <BlogList
                         posts={posts}
                         columnWidth={3}
-                        categories={'conseils'}
+                        category={'conseils'}
                     />
                 </div>
             </Layout>
@@ -53,6 +53,7 @@ export const pageQuery = graphql`
                         description
                         categories
                         subCategories
+                        featuredImage
                     }
                 }
             }

@@ -20,11 +20,7 @@ class BlogNews extends React.Component {
                 <Banner title="News" image={banner} />
                 <PostCategoriesNav />
                 <div class="row mb-2 justify-content-center">
-                    <BlogList
-                        posts={posts}
-                        columnWidth={3}
-                        categories={'news'}
-                    />
+                    <BlogList posts={posts} columnWidth={3} category={'news'} />
                 </div>
             </Layout>
         )
@@ -53,6 +49,7 @@ export const pageQuery = graphql`
                         description
                         categories
                         subCategories
+                        featuredImage
                     }
                 }
             }

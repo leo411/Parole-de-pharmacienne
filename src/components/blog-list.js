@@ -19,9 +19,11 @@ const BlogList = props =>
                 <div
                     class={`col-${props.columnWidth} p-4 d-flex flex-column shadow m-4`}
                 >
-                    {/* <img>
-                {node.frontmatter.featuredImage}
-                </img> */}
+                    <img
+                        src={node.frontmatter.featuredImage}
+                        class="img-fluid"
+                        alt=""
+                    />
                     <strong class="d-inline-block mb-2 text-primary">
                         {node.frontmatter.subCategories}
                     </strong>
