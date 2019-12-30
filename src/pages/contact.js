@@ -15,28 +15,40 @@ class Contact extends React.Component {
             <Layout location={this.props.location}>
                 <SEO title="Contact" />
                 <Banner title="Contact" image={banner} />
-                <div>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
-                        </p>
-                        <hr />
-                        <p>Adresse</p>
-                        <hr />
-                        <hr />
-                        <p>Téléphone</p>
-                        <hr />
-                        <hr />
-                        <p>Mail</p>
-                        <hr />
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa
+                                qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <hr />
+                            <p>Adresse</p>
+                            <hr />
+                            <hr />
+                            <p>Téléphone</p>
+                            <hr />
+                            <hr />
+                            <p>Mail</p>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <label>
+                                Name:
+                                <input type="text" name="name" />
+                            </label>
+                            <input type="submit" value="Submit" />
+                        </form>
                     </div>
                 </div>
             </Layout>
