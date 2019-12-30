@@ -19,7 +19,7 @@ class Blog extends React.Component {
                 <SEO title="All posts" />
                 <Banner title="All posts" image={banner} />
                 <PostCategoriesNav />
-                <div class="row mb-2">
+                <div class="row mb-2 justify-content-center">
                     <BlogList posts={posts} columnWidth={3} />
                 </div>
             </Layout>
