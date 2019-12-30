@@ -44,10 +44,16 @@ const NavBar = () => (
                         >
                             Tous les posts
                         </a>
-                        <a className="dropdown-item navlist-item" href="#">
+                        <a
+                            className="dropdown-item navlist-item"
+                            href="../blog-conseils.js"
+                        >
                             Conseils
                         </a>
-                        <a className="dropdown-item navlist-item" href="#">
+                        <a
+                            className="dropdown-item navlist-item"
+                            href="../pages/blog-news.js"
+                        >
                             News
                         </a>
                     </div>
