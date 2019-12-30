@@ -28,7 +28,7 @@ class IndexPage extends React.Component {
                         <BlogList
                             category="conseils"
                             posts={posts}
-                            columnWidth={4}
+                            columnWidth={3}
                         />
                     </div>
                 </div>
@@ -38,7 +38,7 @@ class IndexPage extends React.Component {
                             News
                         </h3>
                         <hr />
-                        <div class="row mb-2 px-3">
+                        <div class="row mb-2 pl-3 mr-4">
                             <BlogList
                                 category="news"
                                 posts={posts}
