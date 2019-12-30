@@ -3,8 +3,9 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
 import Banner from '../components/banner'
+import Form from '../components/form'
+
 import banner from '../images/banner.jpeg'
 
 class Contact extends React.Component {
@@ -42,13 +43,7 @@ class Contact extends React.Component {
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <form>
-                            <label>
-                                Name:
-                                <input type="text" name="name" />
-                            </label>
-                            <input type="submit" value="Submit" />
-                        </form>
+                        <Form />
                     </div>
                 </div>
             </Layout>
