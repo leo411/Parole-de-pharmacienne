@@ -63,7 +63,6 @@ const NavBar = () => (
                         className="nav-link dropdown-toggle"
                         data-toggle="dropdown"
                         data-target="dropdown_target"
-                        href="#"
                     >
                         Les Boxs
                     </a>
@@ -71,6 +70,9 @@ const NavBar = () => (
                         className="dropdown-menu"
                         aria-labelledby="dropdown_target"
                     >
+                        <a className="dropdown-item navlist-item" href="/boxs/">
+                            Toutes les boxs
+                        </a>
                         <a className="dropdown-item navlist-item" href="#">
                             Thématiques
                         </a>
@@ -84,13 +86,13 @@ const NavBar = () => (
                     </div>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link" href="/atelier-nutrition/">
                         Atelier nutrition
                     </a>
                 </li>
 
                 <li className="nav-item">
-                    <a className="nav-link" href={`/src/pages/about.js`}>
+                    <a className="nav-link" href="/contact/">
                         Contact
                     </a>
                 </li>

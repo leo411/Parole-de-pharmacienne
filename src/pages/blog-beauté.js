@@ -9,7 +9,7 @@ import Banner from '../components/banner'
 import banner from '../images/banner.jpeg'
 import PostCategoriesNav from '../components/postcategoriesnav'
 
-class Blog extends React.Component {
+class BlogBeauté extends React.Component {
     render() {
         const { data } = this.props
         const posts = data.allMdx.edges
@@ -32,7 +32,7 @@ class Blog extends React.Component {
     }
 }
 
-export default Blog
+export default BlogBeauté
 
 export const pageQuery = graphql`
     query {
