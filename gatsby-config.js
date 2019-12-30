@@ -1,9 +1,9 @@
 module.exports = {
     siteMetadata: {
         // edit below
-        title: `Le premier blog de Léopoldine`,
-        author: `Léopoldine Hallynck`,
-        description: `Un blog sur les lapins`,
+        title: `Parole de pharmacienne`,
+        author: `Corinne Attali`,
+        description: `Conseils de pharmacienne`,
         siteUrl: `https://gracious-goldwasser-117cda.netlify.com`,
         social: {
             twitter: ``
