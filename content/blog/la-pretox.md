@@ -3,7 +3,7 @@ date: 2019-12-29T15:35:20.782Z
 title: La pretox
 categories: news
 subCategories: nutrition
-featuredImage: /assets/decomaison.jpg
+featuredImage: /assets/pharma4.jpg
 description: 'J-9 avant le réveillon, on adopte toutes la PRÉTOX !!'
 ---
 La PRÉTOX c’est quoi ?.\
