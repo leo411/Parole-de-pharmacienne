@@ -7,7 +7,6 @@
 </h1>
 
 <img alt="screesnhot" src="./src/images/Screenshotindex.png" />
-<img alt="screesnhot" src="./src/images/screenshot blog.png" />
 
 Welcome to Parole de pharmacienne, a blog that I've made for a client who is a pharmacist and needed to display regularly posts about health, beauty, and nutrition. Those 3 topics are either advices or news.
 My client is going to use the CMS netlify to publish regularly.
@@ -23,4 +22,4 @@ I've used Gatsby Starter Blog to build this site and then I got inspiration from
     <img alt="logobootsrap" src="./src/images/bootstrap-logo.png" />
 
 1.  **Netlify CMS**
-    <img alt="logonetlify src="./src/images/netlifylogo.png" />
+    <img alt="logonetlify" src="./src/images/netlifylogo.png" />
