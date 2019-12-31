@@ -29,6 +29,7 @@ class BlogNutrition extends React.Component {
                         posts={posts}
                         columnWidth={3}
                         subCategory={'nutrition'}
+                        margin={4}
                     />
                 </div>
             </Layout>

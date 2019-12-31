@@ -21,8 +21,8 @@ class Blog extends React.Component {
                 <SEO title="All posts" />
                 <Banner title="All posts" image={banner1} />
                 <PostCategoriesNav />
-                <div class="row mb-2 justify-content-center">
-                    <BlogList posts={posts} columnWidth={3} />
+                <div class="row mb-2 justify-content-around">
+                    <BlogList posts={posts} columnWidth={3} margin={4} />
                 </div>
             </Layout>
         )

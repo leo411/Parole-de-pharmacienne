@@ -26,6 +26,7 @@ class BlogSanté extends React.Component {
                         posts={posts}
                         columnWidth={3}
                         subCategory={'santé'}
+                        margin={4}
                     />
                 </div>
             </Layout>

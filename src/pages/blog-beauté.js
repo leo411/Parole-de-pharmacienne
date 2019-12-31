@@ -27,6 +27,7 @@ class BlogBeauté extends React.Component {
                         posts={posts}
                         columnWidth={3}
                         subCategory={'beauté'}
+                        margin={4}
                     />
                 </div>
             </Layout>

@@ -21,7 +21,12 @@ class BlogNews extends React.Component {
                 <Banner title="News" image={banner1} />
                 <PostCategoriesNav />
                 <div class="row mb-2 justify-content-center">
-                    <BlogList posts={posts} columnWidth={3} category={'news'} />
+                    <BlogList
+                        posts={posts}
+                        columnWidth={3}
+                        category={'news'}
+                        margin={4}
+                    />
                 </div>
             </Layout>
         )
