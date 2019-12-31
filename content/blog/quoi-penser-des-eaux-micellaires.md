@@ -3,7 +3,7 @@ date: 2019-12-29T15:26:27.772Z
 title: Quoi penser des eaux micellaires ?
 categories: conseils
 subCategories: beauté
-featuredImage: /assets/decomaison.jpg
+featuredImage: /assets/pharma3.jpg
 description: 'L’eau micellaire, c’est quoi exactement ?'
 ---
 

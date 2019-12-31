@@ -3,7 +3,7 @@ date: 2019-12-29T15:37:03.087Z
 title: HYALURON-FILLER VITAMINE C BOOSTER
 categories: news
 subCategories: beauté
-featuredImage: /assets/decomaison.jpg
+featuredImage: /assets/pharma1.jpg
 description: >-
     C’est un sérum anti-âge contenant 10 % de vitamine C pure fraîchement activée
     associée à de l’acide hyaluronique

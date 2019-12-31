@@ -3,7 +3,7 @@ date: 2019-12-29T15:33:33.927Z
 title: Octobre Rose
 categories: news
 subCategories: santé
-featuredImage: /assets/decomaison.jpg
+featuredImage: /assets/pharma2.jpg
 description: "Événement Santé - Octobre Rose \U0001F49E"
 ---
 
