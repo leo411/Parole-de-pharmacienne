@@ -1,10 +1,10 @@
 import React from 'react'
-import decomaison from '../images/decomaison.jpg'
+import decomaison1 from '../images/decomaison1.jpg'
 
 const Bio = () => (
     <div class="d-flex">
         <img
-            src={decomaison}
+            src={decomaison1}
             style={{
                 borderRadius: `50%`,
                 height: '150px'
