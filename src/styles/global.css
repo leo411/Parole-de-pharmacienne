@@ -18,6 +18,10 @@ h5,
 h6 {
     font-family: 'Merriweather';
 }
+a,
+h3 {
+    color: #1e7e34;
+}
 
 h4 {
     font-family: 'Merriweather';

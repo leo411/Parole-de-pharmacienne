@@ -3,7 +3,7 @@ import React from 'react'
 import logopharmacie from '../images/logopharmacie.png'
 
 const Footer = () => (
-    <div style={{ backgroundColor: '#e9ecef' }}>
+    <div style={{ backgroundColor: '#f0efed' }}>
         <div class="d-flex flex-column align-items-center">
             <img
                 src={logopharmacie}

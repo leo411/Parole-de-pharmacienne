@@ -5,7 +5,7 @@ import './navbar.css'
 const NavBar = () => (
     <nav
         className="navbar navbar-expand-sm sticky-top"
-        style={{ backgroundColor: `#e9ecef` }}
+        style={{ backgroundColor: `#f0efed` }}
     >
         <button
             className="navbar-toggler"

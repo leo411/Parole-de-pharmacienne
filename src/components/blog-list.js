@@ -25,7 +25,7 @@ const BlogList = props =>
                         class="img-fluid"
                         alt=""
                     />
-                    <strong class="d-inline-block mb-2 text-primary">
+                    <strong class="d-inline-block mb-2">
                         {node.frontmatter.subCategories}
                     </strong>
                     <h3 class="mb=0">
@@ -46,7 +46,10 @@ const BlogList = props =>
                         }}
                     ></p>
                     <Link
-                        style={{ boxShadow: `none` }}
+                        style={{
+                            boxShadow: `none`,
+                            textDecoration: 'underline'
+                        }}
                         to={`blog${node.fields.slug}`}
                     >
                         Continuer à lire

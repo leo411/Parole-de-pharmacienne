@@ -5,7 +5,7 @@ import './postcategoriesnav.css'
 const PostCategoriesNav = () => (
     <nav
         className="navbar navbar-expand-lg"
-        style={{ backgroundColor: `#e9ecef` }}
+        style={{ backgroundColor: `#f0efed` }}
     >
         <button
             className="navbar-toggler"

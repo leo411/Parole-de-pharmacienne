@@ -3,9 +3,10 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
 import Banner from '../components/banner'
+
 import banner from '../images/banner.jpeg'
+import banner1 from '../images/banner1.jpg'
 
 class Boxs extends React.Component {
     render() {
@@ -15,7 +16,7 @@ class Boxs extends React.Component {
         return (
             <Layout location={this.props.location}>
                 <SEO title="Les Boxs" />
-                <Banner title="Les Boxs" image={banner} />
+                <Banner title="Les Boxs" image={banner1} />
                 <p class="p-5">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna

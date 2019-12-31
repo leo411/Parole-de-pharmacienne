@@ -7,6 +7,7 @@ import Banner from '../components/banner'
 import BlogList from '../components/blog-list'
 
 import banner from '../images/banner.jpeg'
+import banner1 from '../images/banner1.jpg'
 
 class IndexPage extends React.Component {
     render() {
@@ -18,7 +19,7 @@ class IndexPage extends React.Component {
                     title="Home"
                     keywords={[`blog`, `gatsby`, `javascript`, `react`]}
                 />
-                <Banner title="Parole de pharmacienne" image={banner} />
+                <Banner title="Parole de pharmacienne" image={banner1} />
                 <div class="container-fluid">
                     <h3 class="my-2" style={{ paddingLeft: '3rem' }}>
                         Conseils

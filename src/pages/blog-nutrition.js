@@ -6,8 +6,10 @@ import SEO from '../components/seo'
 
 import BlogList from '../components/blog-list'
 import Banner from '../components/banner'
-import banner from '../images/banner.jpeg'
 import PostCategoriesNav from '../components/postcategoriesnav'
+
+import banner from '../images/banner.jpeg'
+import bannerNutrition from '../images/bannernutrition.jpg'
 
 class BlogNutrition extends React.Component {
     render() {
@@ -17,7 +19,10 @@ class BlogNutrition extends React.Component {
         return (
             <Layout location={this.props.location}>
                 <SEO title="Conseils et News Nutrition" />
-                <Banner title="Conseils et News Nutrition" image={banner} />
+                <Banner
+                    title="Conseils et News Nutrition"
+                    image={bannerNutrition}
+                />
                 <PostCategoriesNav />
                 <div class="row mb-2 justify-content-center">
                     <BlogList

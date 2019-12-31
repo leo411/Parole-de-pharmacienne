@@ -7,6 +7,7 @@ import Banner from '../components/banner'
 import Form from '../components/form'
 
 import banner from '../images/banner.jpeg'
+import banner1 from '../images/banner1.jpg'
 
 class Contact extends React.Component {
     render() {
@@ -15,7 +16,7 @@ class Contact extends React.Component {
         return (
             <Layout location={this.props.location}>
                 <SEO title="Contact" />
-                <Banner title="Contact" image={banner} />
+                <Banner title="Contact" image={banner1} />
                 <div class="row">
                     <div class="col-md-6">
                         <div>
