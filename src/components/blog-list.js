@@ -18,7 +18,7 @@ const BlogList = props =>
             const title = node.frontmatter.title || node.fields.slug
             return (
                 <div
-                    class={`col-${props.columnWidth} p-4 d-flex flex-column shadow m-${props.margin}`}
+                    class={`col-md-${props.columnWidth} p-4 d-flex flex-column shadow m-${props.margin}`}
                 >
                     <img
                         src={node.frontmatter.featuredImage}

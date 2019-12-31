@@ -4,30 +4,27 @@ import './navbar.css'
 
 const NavBar = () => (
     <nav
-        className="navbar navbar-expand-sm sticky-top"
+        class="navbar navbar-expand-md sticky-top"
         style={{ backgroundColor: `#f0efed` }}
     >
         <button
-            className="navbar-toggler"
+            class="navbar-toggler"
             data-toggle="collapse"
             data-target="#collapse_target"
         >
-            <span className="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <Logo />
-        <div
-            className="collapse navbar-collapse navBarText"
-            id="collapse_target"
-        >
-            <ul className="navbar-nav">
-                <li className="nav-item">
-                    <a className="nav-link" href="/#/">
+        <div class="collapse navbar-collapse navBarText" id="collapse_target">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/#/">
                         Home
                     </a>
                 </li>
-                <li className="nav-item dropdown">
+                <li class="nav-item dropdown">
                     <a
-                        className="nav-link dropdown-toggle"
+                        class="nav-link dropdown-toggle"
                         data-toggle="dropdown"
                         data-target="dropdown_target"
                         href="#"
@@ -35,64 +32,61 @@ const NavBar = () => (
                         Blog
                     </a>
                     <div
-                        className="dropdown-menu"
+                        class="dropdown-menu"
                         aria-labelledby="dropdown_target"
                     >
-                        <a
-                            className="dropdown-item navlist-item"
-                            href="../blog/"
-                        >
+                        <a class="dropdown-item navlist-item" href="../blog/">
                             Tous les posts
                         </a>
                         <a
-                            className="dropdown-item navlist-item"
+                            class="dropdown-item navlist-item"
                             href="/blog-conseils/"
                         >
                             Conseils
                         </a>
                         <a
-                            className="dropdown-item navlist-item"
+                            class="dropdown-item navlist-item"
                             href="/blog-news/"
                         >
                             News
                         </a>
                     </div>
                 </li>
-                <li className="nav-item dropdown">
+                <li class="nav-item dropdown">
                     <a
-                        className="nav-link dropdown-toggle"
+                        class="nav-link dropdown-toggle"
                         data-toggle="dropdown"
                         data-target="dropdown_target"
                     >
                         Les Boxs
                     </a>
                     <div
-                        className="dropdown-menu"
+                        class="dropdown-menu"
                         aria-labelledby="dropdown_target"
                     >
-                        <a className="dropdown-item navlist-item" href="/boxs/">
+                        <a class="dropdown-item navlist-item" href="/boxs/">
                             Toutes les boxs
                         </a>
-                        <a className="dropdown-item navlist-item" href="#">
+                        <a class="dropdown-item navlist-item" href="#">
                             Thématiques
                         </a>
-                        <div className="background-color"></div>
-                        <a className="dropdown-item navlist-item" href="#">
+                        <div class="background-color"></div>
+                        <a class="dropdown-item navlist-item" href="#">
                             Sur abonnement
                         </a>
-                        <a className="dropdown-item navlist-item" href="#">
+                        <a class="dropdown-item navlist-item" href="#">
                             Boutique
                         </a>
                     </div>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="/atelier-nutrition/">
+                <li class="nav-item">
+                    <a class="nav-link" href="/atelier-nutrition/">
                         Atelier nutrition
                     </a>
                 </li>
 
-                <li className="nav-item">
-                    <a className="nav-link" href="/contact/">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact/">
                         Contact
                     </a>
                 </li>
