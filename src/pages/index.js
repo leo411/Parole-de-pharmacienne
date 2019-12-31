@@ -24,11 +24,12 @@ class IndexPage extends React.Component {
                         Conseils
                     </h3>
                     <hr />
-                    <div class="row mb-2 justify-content-center">
+                    <div class="row mb-2 justify-content-around">
                         <BlogList
                             category="conseils"
                             posts={posts}
                             columnWidth={3}
+                            limit={3}
                         />
                     </div>
                 </div>
@@ -43,6 +44,8 @@ class IndexPage extends React.Component {
                                 category="news"
                                 posts={posts}
                                 columnWidth={7}
+                                limit={3}
+                                margin={4}
                             />
                         </div>
                     </div>

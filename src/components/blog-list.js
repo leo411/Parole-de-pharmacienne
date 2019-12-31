@@ -13,11 +13,12 @@ const BlogList = props =>
                 !props.subCategory ||
                 node.frontmatter.subCategories === props.subCategory
         )
+        .slice(0, props.limit || props.posts.length)
         .map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
                 <div
-                    class={`col-${props.columnWidth} p-4 d-flex flex-column shadow m-4`}
+                    class={`col-${props.columnWidth} p-4 d-flex flex-column shadow m-${props.margin}`}
                 >
                     <img
                         src={node.frontmatter.featuredImage}
