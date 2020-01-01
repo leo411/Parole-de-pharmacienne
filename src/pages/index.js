@@ -1,50 +1,92 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Button from '../components/button'
-import About from '../pages/about'
-import NavBar from '../components/navbar'
+import Bio from '../components/bio'
+import Banner from '../components/banner'
+import BlogList from '../components/blog-list'
 
-import rabbit from '../images/lapin_04.jpg'
+import banner from '../images/banner.jpeg'
+import banner1 from '../images/banner1.jpg'
 
 class IndexPage extends React.Component {
     render() {
-        const siteTitle = 'Le blog de Léopoldine'
-
+        const { data } = this.props
+        const posts = data.allMdx.edges
         return (
-            <Layout location={this.props.location} title={siteTitle}>
+            <Layout location={this.props.location}>
                 <SEO
                     title="Home"
                     keywords={[`blog`, `gatsby`, `javascript`, `react`]}
                 />
-                <img src={rabbit} alt="" />
-                <Link to="/about/">
-                    <Button marginTop="35px">About</Button>
-                </Link>
-                <NavBar></NavBar>
-                <h1>
-                    Hey people{' '}
-                    <span role="img" aria-label="wave emoji">
-                        👋
-                    </span>
-                </h1>
-                <p>
-                    Bienvenue sur le blog de Léopoldine. Nous allons parler de
-                    lapins. Vous êtes actuellement sur la page d'accueil.
-                </p>
-                <p>
-                    Pour en découvrir plus sur les lapins je vous invite à
-                    visiter mon blog.
-                </p>
-                <p>Bonne lecture!</p>
-                <Link to="/blog/">
-                    <Button marginTop="35px">Go to Blog</Button>
-                </Link>
+                <Banner title="Parole de pharmacienne" image={banner1} />
+                <div class="container-fluid">
+                    <h3 class="my-2" style={{ paddingLeft: '3rem' }}>
+                        Conseils
+                    </h3>
+                    <hr />
+                    <div class="row mb-2 justify-content-around">
+                        <BlogList
+                            category="conseils"
+                            posts={posts}
+                            columnWidth={3}
+                            limit={3}
+                        />
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <h3 class="my-2" style={{ paddingLeft: '3rem' }}>
+                            News
+                        </h3>
+                        <hr />
+                        <div class="row mb-2 pl-3 justify-content-center">
+                            <BlogList
+                                category="news"
+                                posts={posts}
+                                columnWidth={7}
+                                limit={3}
+                                margin={4}
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="my-2" style={{ paddingLeft: '3rem' }}>
+                            About
+                        </h3>
+                        <hr />
+                        <Bio />
+                    </div>
+                </div>
             </Layout>
         )
     }
 }
-
 export default IndexPage
+export const pageQuery = graphql`
+    query {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+        allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+            edges {
+                node {
+                    excerpt
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        date(formatString: "MMMM DD, YYYY")
+                        title
+                        description
+                        categories
+                        subCategories
+                        featuredImage
+                    }
+                }
+            }
+        }
+    }
+`

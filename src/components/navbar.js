@@ -1,121 +1,96 @@
 import React from 'react'
-import logolapin from '../images/logolapin.jpg'
+import Logo from '../components/logo'
+import './navbar.css'
 
 const NavBar = () => (
     <nav
-        className="navbar navbar-expand-lg navbar-light bg-light"
-        style={{ backgroundColor: '#e3f2fd' }}
+        class="navbar navbar-expand-md navbar-light sticky-top"
+        style={{ backgroundColor: `#f0efed` }}
     >
-        <a
-            className="navbar-brand"
-            href="/"
-            style={{ color: 'black', boxShadow: 'none' }}
-        >
-            <img src={logolapin} width="30" height="30" alt="" />
-        </a>
-        {/* <button
-            className="navbar-toggler"
-            type="button"
+        <button
+            class="navbar-toggler"
             data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-target="#collapse_target"
         >
-            <span className="navbar-toggler-icon"></span>
-        </button> */}
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-                <a
-                    className="nav-item nav-link active"
-                    href="/"
-                    style={{
-                        paddingRight: 20,
-                        color: 'black',
-                        boxShadow: 'none'
-                    }}
-                >
-                    Home <span className="sr-only"></span>
-                </a>
-                <a
-                    className="nav-item nav-link"
-                    href="/about/"
-                    style={{
-                        paddingRight: 20,
-                        color: 'black',
-                        boxShadow: 'none'
-                    }}
-                >
-                    About
-                </a>
-                <div className="nav-item dropdown">
-                    >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <Logo />
+        <div class="collapse navbar-collapse navBarText" id="collapse_target">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/#/">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
                     <a
-                        className="nav-link dropdown-toggle"
-                        href="/blog/"
-                        id="navbarDropdownMenuLink"
+                        class="nav-link dropdown-toggle"
                         data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        style={{
-                            paddingRight: 20,
-                            color: 'black',
-                            boxShadow: 'none'
-                        }}
+                        data-target="dropdown_target"
+                        href="#"
                     >
                         Blog
                     </a>
                     <div
-                        className="dropdown-menu"
-                        aria-labelledby="navbarDropdownMenuLink"
+                        class="dropdown-menu"
+                        aria-labelledby="dropdown_target"
                     >
-                        <a
-                            className="dropdown-item"
-                            href="#"
-                            style={{
-                                paddingRight: 20,
-                                color: 'black',
-                                boxShadow: 'none'
-                            }}
-                        >
-                            Lapin domestique
+                        <a class="dropdown-item navlist-item" href="../blog/">
+                            Tous les posts
                         </a>
                         <a
-                            className="dropdown-item"
-                            href="#"
-                            style={{
-                                paddingRight: 20,
-                                color: 'black',
-                                boxShadow: 'none'
-                            }}
+                            class="dropdown-item navlist-item"
+                            href="/blog-conseils/"
                         >
-                            Lapin sauvage
+                            Conseils
                         </a>
                         <a
-                            className="dropdown-item"
-                            href="#"
-                            style={{
-                                paddingRight: 20,
-                                color: 'black',
-                                boxShadow: 'none'
-                            }}
+                            class="dropdown-item navlist-item"
+                            href="/blog-news/"
                         >
-                            Autre
+                            News
                         </a>
                     </div>
-                </div>
-                <a
-                    className="nav-item nav-link disabled"
-                    href="#"
-                    style={{
-                        paddingRight: 20,
-                        color: 'black',
-                        boxShadow: 'none'
-                    }}
-                >
-                    Store
-                </a>
-            </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        data-toggle="dropdown"
+                        data-target="dropdown_target"
+                    >
+                        Les Boxs
+                    </a>
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdown_target"
+                    >
+                        <a class="dropdown-item navlist-item" href="/boxs/">
+                            Toutes les boxs
+                        </a>
+                        <a class="dropdown-item navlist-item" href="#">
+                            Thématiques
+                        </a>
+                        <div class="background-color"></div>
+                        <a class="dropdown-item navlist-item" href="#">
+                            Sur abonnement
+                        </a>
+                        <a class="dropdown-item navlist-item" href="#">
+                            Boutique
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/atelier-nutrition/">
+                        Atelier nutrition
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact/">
+                        Contact
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
 )
