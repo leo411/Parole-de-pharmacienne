@@ -4,7 +4,7 @@ import './navbar.css'
 
 const NavBar = () => (
     <nav
-        class="navbar navbar-expand-md sticky-top"
+        class="navbar navbar-expand-md navbar-light sticky-top"
         style={{ backgroundColor: `#f0efed` }}
     >
         <button
