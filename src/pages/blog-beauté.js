@@ -8,8 +8,6 @@ import BlogList from '../components/blog-list'
 import Banner from '../components/banner'
 import PostCategoriesNav from '../components/postcategoriesnav'
 
-import banner from '../images/banner.jpeg'
-import bannerBeauté from '../images/bannerbeauté.jpg'
 import bannerBeaute5 from '../images/bannerbeaute5.jpg'
 
 class BlogBeauté extends React.Component {
